@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Main Characters - Book of Mormon</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigation Styles */
+    nav {
+      background-color: #30563b;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      margin: 0 10px;
+      font-size: 1.1em;
+      text-transform: uppercase;
+    }
+
+    nav a:hover {
+      background-color: #568a5d;
+    }
+
+    header {
+      background-color: #30563b;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4em;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .character {
+      background-color: #ffffff;
+      border-left: 6px solid #568a5d;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      margin-bottom: 30px;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .character img {
+      width: 180px;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+
+    .character-content {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .character h2 {
+      margin-top: 0;
+      color: #30563b;
+    }
+
+    .scripture {
+      font-style: italic;
+      margin: 10px 0;
+      color: #666;
+    }
+
+    .toggle-btn {
+      background-color: #568a5d;
+      color: white;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .details {
+      display: none;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #30563b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 700px) {
+      .character {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .character img {
+        margin: 0 0 15px 0;
+        width: 100%;
+        max-width: 250px;
+      }
+
+      .character-content {
+        text-align: center;
+      }
+    }
+  </style>
+   <header>
+    <h1>Main Characters in the Book of Mormon</h1>
+  </header>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="characters.html">Characters</a>
+    <a href="stories.html">Stories</a>
+    <a href="important-scriptures.html">Important Scriptures</a>
+    <a href="personal-connections.html">Personal Connections</a>
+  </nav>
+
+
+  <main>
+
+    <!-- Nephi -->
+    <div class="character">
+      <img src="Nephi.jpeg" alt="Nephi" />
+      <div class="character-content">
+        <h2>Nephi – Faithful Prophet and Leader</h2>
+        <p class="scripture">Key Scripture: 1 Nephi 3:7</p>
+        <p>Nephi was one of the earliest and most faithful prophets in the Book of Mormon. He obeyed God's commandments, built a ship, and led his family to the promised land.</p>
+        <button class="toggle-btn" onclick="toggleDetails(this)">Read More</button>
+        <div class="details">
+          <p>Nephi's life is a powerful example of obedience and courage. His record in 1 and 2 Nephi includes teachings about the Atonement, baptism, and enduring to the end. His leadership laid the foundation for future generations of Nephites.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lehi -->
+    <div class="character">
+      <img src="lehi.jpeg" alt="Lehi" />
+      <div class="character-content">
+        <h2>Lehi – Prophet and Father</h2>
+        <p class="scripture">Key Scripture: 1 Nephi 8</p>
+        <p>Lehi was a prophet in Jerusalem who led his family into the wilderness and to the promised land. His vision of the tree of life has become a key symbol in the Book of Mormon.</p>
+        <button class="toggle-btn" onclick="toggleDetails(this)">Read More</button>
+        <div class="details">
+          <p>Lehi's teachings about repentance, the role of the Savior, and the importance of choice are central themes in the Book of Mormon. His record sets the stage for much of the book's message of faith and salvation.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alma the Younger -->
+    <div class="character">
+      <img src="alma.the.younger.jpeg" alt="Alma the Younger" />
+      <div class="character-content">
+        <h2>Alma the Younger – Converted Prophet</h2>
+        <p class="scripture">Key Scripture: Alma 36:17–20</p>
+        <p>Once a rebellious son of a prophet, Alma experienced a miraculous conversion and became a powerful missionary and church leader.</p>
+        <button class="toggle-btn" onclick="toggleDetails(this)">Read More</button>
+        <div class="details">
+          <p>His conversion by an angel and his account of repentance is one of the most personal and emotional in scripture. He taught boldly, led missionary journeys, and emphasized faith, repentance, and being born again.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mormon -->
+    <div class="character">
+      <img src="mormon.png" alt="Mormon" />
+      <div class="character-content">
+        <h2>Mormon – Prophet and Record Keeper</h2>
+        <p class="scripture">Key Scripture: Mormon 1-9</p>
+        <p>Mormon was a military leader and the final editor of the Nephite records. He was responsible for abridging the record that became the Book of Mormon.</p>
+        <button class="toggle-btn" onclick="toggleDetails(this)">Read More</button>
+        <div class="details">
+          <p>In the face of the Nephite nation's destruction, Mormon's writings reflect his deep concern for his people and his desire for them to turn to God. His final words are a powerful invitation to all to come unto Christ.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Moroni -->
+    <div class="character">
+      <img src="moroni.jpeg" alt="Moroni" />
+      <div class="character-content">
+        <h2>Moroni – Last Prophet and Record Keeper</h2>
+        <p class="scripture">Key Scripture: Moroni 10:3–5</p>
+        <p>Moroni was the final prophet of the Nephites and the son of Mormon. After the Nephite destruction, he sealed the record and buried it.</p>
+        <button class="toggle-btn" onclick="toggleDetails(this)">Read More</button>
+        <div class="details">
+          <p>Moroni’s writings and his final invitation to all to ponder the Book of Mormon's truth are crucial. He also appeared as an angel to Joseph Smith to deliver the gold plates.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Abinadi -->
+    <div class="character">
+      <img src="abinidi.jpeg" alt="Abinadi" />
+      <div class="character-content">
+        <h2>Abinadi – Martyr and Prophet</h2>
+        <p class="scripture">Key Scripture: Mosiah 12-17</p>
+        <p>Abinadi was a prophet who boldly preached to King Noah and his priests, condemning their wickedness.</p>
+        <button class="toggle-btn" onclick="toggleDetails(this)">Read More</button>
+        <div class="details">
+          <p>His teachings on the coming of Christ, repentance, and the Atonement had a profound effect, especially on Alma the Elder, who later became a great prophet and leader.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- King Benjamin -->
+    <div class="character">
+      <img src="king.benjamin.jpeg" alt="King Benjamin" />
+      <div class="character-content">
+        <h2>King Benjamin – Righteous King and Teacher</h2>
+        <p class="scripture">Key Scripture: Mosiah 2-5</p>
+        <p>King Benjamin was a righteous Nephite king who gave a memorable sermon to his people before his death.</p>
+        <button class="toggle-btn" onclick="toggleDetails(this)">Read More</button>
+        <div class="details">
+          <p>His teachings about service, the nature of Christ, and the importance of humility are foundational in understanding the doctrine of Christ.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Captain Moroni -->
+    <div class="character">
+      <img src="captain.moroni.jpeg" alt="Captain Moroni" />
+      <div class="character-content">
+        <h2>Captain Moroni – Defender of Liberty</h2>
+        <p class="scripture">Key Scripture: Alma 46:12</p>
+        <p>Captain Moroni was a military commander who inspired the Nephites to defend their religion and freedom.</p>
+        <button class="toggle-btn" onclick="toggleDetails(this)">Read More</button>
+        <div class="details">
+          <p>He created the Title of Liberty and led the Nephites in several military campaigns against the Lamanites. He is remembered for his courage, strategy, and devotion to liberty.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ammon -->
+    <div class="character">
+      <img src="ammon.jpeg" alt="Ammon" />
+      <div class="character-content">
+        <h2>Ammon – Missionary and Servant</h2>
+        <p class="scripture">Key Scripture: Alma 17-20</p>
+        <p>Ammon was one of the sons of Mosiah and a missionary to the Lamanites.</p>
+        <button class="toggle-btn" onclick="toggleDetails(this)">Read More</button>
+        <div class="details">
+          <p>Ammon’s courage and service to King Lamoni and his people led to their conversion and acceptance of the gospel. His story is a powerful example of missionary work and selfless service.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- More characters can be added in the same format -->
+
+  </main>
+
+  <footer>
+    &copy; 2025 The Book of Mormon Site | Created for Educational Purposes
+  </footer>
+
+  <script>
+    function toggleDetails(button) {
+      const details = button.nextElementSibling;
+      if (details.style.display === "block") {
+        details.style.display = "none";
+        button.textContent = "Read More";
+      } else {
+        details.style.display = "block";
+        button.textContent = "Hide Details";
+      }
+    }
+  </script>
+
+</body>
+</html>
